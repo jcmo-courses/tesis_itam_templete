@@ -1,0 +1,99 @@
+\documentclass[letterpaper,onside,11pt]{book}
+
+%	Paquetes
+\usepackage[paperwidth=17cm, 
+			paperheight=22.5cm, 
+			bottom=2.5cm, 
+			right=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+%\usepackage{algorithm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage[toc,page]{appendix}
+\usepackage{booktabs}
+%\usepackage{algorithm2e}
+ 
+%	Estilo de bibliografia
+\usepackage[round]{natbib}
+%\bibliographystyle{apalike}
+\bibliographystyle{chicago}
+%\bibliographystyle{unsrtnat}
+ 
+% para su uso en maketitle
+\title{T\'itulo}
+\author{Autor}
+\date{\today}
+ 
+%	Commands
+\renewcommand{\chaptername}{Cap\'itulo}
+\renewcommand{\figurename}{Gr\'afica}
+\usepackage{setspace}
+%\singlespacing        %% 1-spacing (default)
+\onehalfspacing       %% 1,5-spacing
+%\doublespacing        %% 2-spacing
+\pagestyle{plain}
+
+%
+%	Documento
+%
+\begin{document}
+ 
+%	No MAKETITLE
+%\maketitle	% comenta esta instruccion para la version final
+
+\begin{titlepage}
+	\begin{center}
+		
+		\textsc{\Large Instituto Tecnol\'ogico Aut\'onomo de M\'exico}\\[4em]
+		
+		%Figura
+		\begin{center}
+			\includegraphics{DocumentosLaTex/ITAM_2016.png}
+		\end{center}
+		
+		\vspace{2em}
+		
+		{\sc \huge {\bf T\'itulo}}\\[4em]
+		
+		\textsc{\large Tesis}\\[1em]
+		
+		\textsc{que para obtener el t\'itulo}\\[1em]
+		
+		\textsc{Licenciado en <<carrera>>}\\[1em]
+		
+		\textsc{presenta}\\[1em]
+		
+		\textsc{\Large Autor}\\[1em]
+		
+		\textsc{\large Asesor: ...}
+		
+	\end{center}
+	
+	\vspace*{\fill}
+	\textsc{Ciudad de M\'exico \hspace*{\fill} 2017}
+	
+\end{titlepage}
+
+%	
+\tableofcontents
+
+%	Capitulos
+\input{capitulo0}
+
+
+%	Bibliografia
+\medskip
+\addcontentsline{toc}{chapter}{Bibliograf\'ia}
+\bibliography{tesis_itam_bibliografia}
+
+
+%	Apendices
+\appendix
+%\input{Apendice1}
+
+\end{document}
